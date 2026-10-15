@@ -193,6 +193,15 @@ python train_main_model.py \
   --model-path data/models/wbc_final_model_densenet.keras
 ```
 
+### Kaggle Notebook (no setup)
+
+`notebooks/wbc_analyzer_kaggle_quickstart.ipynb` is a self-contained quickstart: it embeds the
+custom layers, the preprocessing filter and five sample images, loads the model, runs predictions
+and Grad-CAM, classifies a folder of your own images, and optionally evaluates on Raabin-WBC. It
+also loads the model on Keras versions older than the 3.14 it was saved with. After changing
+`src/` or `docs/samples/`, regenerate it with `python notebooks/build_kaggle_notebook.py`
+(`tests/test_notebook.py` fails if it is stale).
+
 ### API Reference
 
 Request (multipart/form-data):

@@ -104,6 +104,14 @@ python train_main_model.py \
   --model-path data/models/wbc_final_model_densenet.keras
 ```
 
+## Kaggle Notebook
+
+`notebooks/wbc_analyzer_kaggle_quickstart.ipynb` kurulum gerektirmeyen bir başlangıç defteridir:
+özel katmanları, ön işleme filtresini ve beş örnek görüntüyü içinde taşır; modeli yükler, tahmin ve
+Grad-CAM üretir, kendi görüntü klasörünüzü sınıflandırır ve isteğe bağlı olarak Raabin-WBC üzerinde
+değerlendirme yapar. `src/` veya `docs/samples/` değişirse `python notebooks/build_kaggle_notebook.py`
+ile yeniden üretin (`tests/test_notebook.py` eski kalırsa başarısız olur).
+
 ## API Örneği
 
 `POST /predict` form alanı:
