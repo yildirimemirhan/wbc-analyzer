@@ -1,0 +1,77 @@
+{
+  "mode": "compiled",
+  "warmup": 10,
+  "runs": 100,
+  "batch_size": 1,
+  "dtype": "float32",
+  "tf_version": "2.21.0",
+  "keras_version": "3.14.0",
+  "gpus": [],
+  "devices": [
+    "/physical_device:CPU:0"
+  ],
+  "platform": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "processor": "x86_64",
+  "results": [
+    {
+      "model": "VGG16",
+      "total_params": 15113029,
+      "mean_ms": 35.602761739999096,
+      "median_ms": 34.353386999995905,
+      "p95_ms": 41.984624899984624,
+      "std_ms": 3.216861802692132,
+      "min_ms": 32.13487299998974,
+      "runs": 100
+    },
+    {
+      "model": "ResNet50V2",
+      "total_params": 24749573,
+      "mean_ms": 30.681923860002197,
+      "median_ms": 30.7006010000066,
+      "p95_ms": 32.10182865001627,
+      "std_ms": 1.9479434447104367,
+      "min_ms": 27.7341080000042,
+      "runs": 100
+    },
+    {
+      "model": "MobileNetV2",
+      "total_params": 3049541,
+      "mean_ms": 20.874212720000287,
+      "median_ms": 21.001288999968892,
+      "p95_ms": 21.957635899994443,
+      "std_ms": 0.8639174770993611,
+      "min_ms": 18.90705800002479,
+      "runs": 100
+    },
+    {
+      "model": "EfficientNetB0",
+      "total_params": 4841128,
+      "mean_ms": 31.75764329999936,
+      "median_ms": 32.0318699999973,
+      "p95_ms": 32.7988212499605,
+      "std_ms": 0.9272464407001159,
+      "min_ms": 29.567518000021664,
+      "runs": 100
+    },
+    {
+      "model": "DenseNet121_vanilla",
+      "total_params": 7697989,
+      "mean_ms": 57.07659274999969,
+      "median_ms": 56.777586000009705,
+      "p95_ms": 61.072691449973604,
+      "std_ms": 2.4631708326677666,
+      "min_ms": 52.05569600002491,
+      "runs": 100
+    },
+    {
+      "model": "Proposed",
+      "total_params": 7830509,
+      "mean_ms": 56.06148293999695,
+      "median_ms": 56.549880499972005,
+      "p95_ms": 58.01193194998007,
+      "std_ms": 2.119965096641594,
+      "min_ms": 51.220999999998185,
+      "runs": 100
+    }
+  ]
+}

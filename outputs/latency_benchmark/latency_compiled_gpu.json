@@ -1,0 +1,80 @@
+{
+  "mode": "compiled",
+  "warmup": 10,
+  "runs": 200,
+  "batch_size": 1,
+  "dtype": "float32",
+  "tf_version": "2.21.0",
+  "keras_version": "3.14.0",
+  "gpus": [
+    "NVIDIA GeForce RTX 4070 Ti SUPER"
+  ],
+  "devices": [
+    "/physical_device:CPU:0",
+    "/physical_device:GPU:0"
+  ],
+  "platform": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "processor": "x86_64",
+  "results": [
+    {
+      "model": "VGG16",
+      "total_params": 15113029,
+      "mean_ms": 3.0164681649988268,
+      "median_ms": 2.7821225000081995,
+      "p95_ms": 4.584620349987744,
+      "std_ms": 0.7885370047093275,
+      "min_ms": 2.3567430000071,
+      "runs": 200
+    },
+    {
+      "model": "ResNet50V2",
+      "total_params": 24749573,
+      "mean_ms": 10.039611164999798,
+      "median_ms": 6.041237499985641,
+      "p95_ms": 25.81691460001565,
+      "std_ms": 7.522121927015754,
+      "min_ms": 4.8521139999877505,
+      "runs": 200
+    },
+    {
+      "model": "MobileNetV2",
+      "total_params": 3049541,
+      "mean_ms": 9.636976895000231,
+      "median_ms": 5.486954500014463,
+      "p95_ms": 21.220806200008717,
+      "std_ms": 6.9014291384691795,
+      "min_ms": 3.9219040000091354,
+      "runs": 200
+    },
+    {
+      "model": "EfficientNetB0",
+      "total_params": 4841128,
+      "mean_ms": 11.89631860999981,
+      "median_ms": 8.142824499998369,
+      "p95_ms": 27.409721149996354,
+      "std_ms": 7.20442735967488,
+      "min_ms": 5.564572999986694,
+      "runs": 200
+    },
+    {
+      "model": "DenseNet121_vanilla",
+      "total_params": 7697989,
+      "mean_ms": 21.793716345000007,
+      "median_ms": 17.806689500005746,
+      "p95_ms": 48.12904519999235,
+      "std_ms": 11.806023368824889,
+      "min_ms": 11.02697600001079,
+      "runs": 200
+    },
+    {
+      "model": "Proposed",
+      "total_params": 7830509,
+      "mean_ms": 27.486614655001205,
+      "median_ms": 18.459664000005205,
+      "p95_ms": 61.391568700013,
+      "std_ms": 18.300430351506286,
+      "min_ms": 11.594145000003664,
+      "runs": 200
+    }
+  ]
+}
